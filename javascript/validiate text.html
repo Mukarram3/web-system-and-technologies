@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+
+
+<input type = "text" id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text, y;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    
+    if (isNaN(x)) {
+	y= x.length;
+	if(y == 5){
+        text = "Input valid";
+	}
+	else
+	text = "only 5 alphabets allowed";
+    } 
+else {
+        text = "Input invalid or empty";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 

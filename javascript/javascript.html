@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- bootstrap css -->    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="psd.css">
+
+</head>
+
+
+<body onresize="mouse_events()" onscroll="mouse_events()">
+
+
+<button class="btn btn-primary" onclick="mouse_events()">Click me</button>
+<p ondblclick="mouse_events()">mouse double click</p>
+<p oncontextmenu="mouse_events()">mouse right click</p>
+  <p onmouseenter="mouse_events()">mouse hover</p>
+  <p onmouseout="mouse_events()">mouse out</p>
+  <p onmousedown="mouse_events()">mouse down</p>
+  <p onmouseup="mouse_events()">mouse up</p>
+  <p onload="mouse_events()">window load</p>
+  <p onunload="mouse_events()">window unload</p>
+
+   <p style="display: inline">keypress</p> <input type="text" name="" id="" onkeypress="mouse_events()">
+
+   <p style="display: inline">keyup</p> <input type="text" name="" id="" onkeyup="mouse_events()">
+ 
+
+
+
+<h1 id="h1">sdfghjk</h1>
+
+
+  
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script>
+//        const, let, var variables
+      var a="mukarram";
+      var a="mukarram ashraf";
+      document.write(a);
+      document.write("<br>");
+      let b="12345 <br>";
+      document.write(b);
+      b="mukarram <br>";
+      document.write(b);
+
+      const c="my name is mukarram  <br> ";
+      document.write(c);
+
+//         console
+
+
+      console.time();
+      console.log(b);
+      console.log([1,"mukarram","ashraf"]);
+      console.table([1,"mukarram","ashraf"]);
+      console.error("this is error");
+      console.warn("this is warning");
+      console.timeEnd();
+
+
+
+      //        opoerators
+
+
+
+      var a=10;
+      var e=20;
+      var f=a+e;
+      document.write(f);
+      f*=e;
+      document.write("<br>");
+      document.write(f);
+      e+=a;
+      document.write("<br>");
+      document.write(e);
+      var g=2**5;
+      document.write("<br>");
+      document.write(g);
+
+
+      //      if
+
+
+      var x=20;
+      var w=20;
+      var y=30;
+      var z="mukarram";
+
+      if(x<=y &&  x!=y && x!==z && x==w && !x<=y){
+            document.write("<br>");
+            document.write("true");
+      }
+      else{
+            document.write("<br>");
+            document.write("false");
+      }
+
+
+
+      //      ternary operator
+
+
+
+      document.write("<br>");
+      var val1=20;
+      var val2= (val1>10)? "true":"false";
+      document.write(val2);
+
+      
+      (val1>10)? val2="true": val2="false";
+      document.write(val2);
+
+      val2= "value is " + (val1>10? "true":"false");
+      document.write(val2);
+
+
+      //     switch case
+
+
+
+      document.write("<br>");
+      var age=25;
+
+      switch(age){
+            case 23:
+            document.write("23");
+            break;
+            case 24:
+            document.write("24");
+            break;
+            case 25:
+            document.write("25");
+            break;
+            case 26:
+            document.write("26");
+            break;
+            default:
+            document.write("not matched");
+            break;
+      }
+
+
+      document.write("<br>");
+      var age=25;
+
+      switch(true){
+            case (age<=30 && age >=20):
+            document.write("age is " + age + "<br>");
+            break;
+            default:
+            document.write("not matched");
+            break;
+            
+      }
+
+
+
+      //    mouse events
+/*      
+      function mouse_events(){
+            alert("hello everyone");
+      }
+
+*/
+
+
+//          while loop
+
+
+var w=1;
+document.write("<ul>");
+while (w<=10){
+
+      
+      document.write("<li>" + w + ") hello i m here" + "</li>");
+      w++;
+      
+}
+
+document.write("</ul>");
+
+
+document.write("<br>");
+
+
+//             for loop and array anf array of loops
+
+
+for (var w=1; w<=100; w=w+10){
+
+      for (var q=w; q<w+10; q++){
+
+            document.write(q + " ");
+
+      }
+      document.write("<br>");
+
+}
+
+
+
+document.write("<br><br>");
+var a= [10,20,30,40];
+
+for(var ar=0; ar<5; ar++){
+
+document.write(a[ar] + " ");
+
+}
+
+document.write("<br><br>");
+/*
+var a= new Array();
+
+for (var g=0; g<5; g++){
+    a[g]= prompt("enter value");
+}
+
+for(var ar=0; ar<7; ar++){
+
+document.write(a[ar] + " ");
+
+}  */
+
+
+document.write("<br><br>");
+
+
+
+//                    objects
+
+
+var a= {
+      fname : "mukarram",
+      lname : "ashraf",
+      age : 20,
+      email : "mukarram123786@gmail.com",
+      array : [1,"mukarram","10-3-2020"],
+      /*
+      salary: function(
+            return 25000;
+      ),
+      fullname: function(
+            return this.fname + " " + this.lname;
+      )
+      */  
+
+}
+
+console.log(a);
+document.write(a.array);
+document.write("<br>");
+document.write(a["age"]);
+document.write("<br>");
+
+
+var a= new Object;
+a.fname= "muhammad";
+a.lname= "mukarram";
+a.age= 18;
+console.log(a);
+document.write(a.age);
+
+
+//        array of objects
+
+
+document.write("<br><br>");
+var array= [
+
+{fname: "mukarram", rollno: 23},
+{fname: "ali", rollno: 1},
+{fname: "ahmad", rollno: 2},
+{fname: "zeshan", rollno: 3},
+
+];
+
+console.log(array);
+for (var arr=0; arr<array.length; arr++){
+      document.write(array[arr].fname + " " + array[arr].rollno);
+      document.write("<br>");
+}
+
+
+document.write("<br>");
+
+
+//             date method
+
+
+
+var date= new Date();
+document.write(date);
+document.write("<br>");
+document.write(date.getDate());
+document.write("<br>");
+document.write(date.toDateString());
+document.write("<br>");
+document.write(date.getMonth());
+document.write("<br>");
+document.write(date.getFullYear());
+document.write("<br>");
+document.write(date.getSeconds());
+document.write("<br>");
+document.write(date.getHours());
+document.write("<br>");
+document.write(date.getDay());
+document.write("<br>");
+
+date.setDate(30)
+document.write(date);
+document.write("<br>");
+date.setMonth(1)
+document.write(date);
+document.write("<br>");
+date.setFullYear(2021)
+document.write(date);
+document.write("<br>");
+
+
+//         string
+
+
+document.write("<br>");
+var str= "javascript is a great is language";
+var a=str.length;
+document.write(a);
+document.write("<br>");
+var d=str.toLowerCase();
+document.write(d);
+document.write("<br>");
+var e=str.toUpperCase();
+document.write(e);
+document.write("<br>");
+var f=str.includes("great");
+document.write(f);
+document.write("<br>");
+var g=str.startsWith("java");
+document.write(g);
+document.write("<br>");
+var h=str.endsWith("age");
+document.write(h);
+document.write("<br>");
+var i=str.search("bad");
+document.write(i);
+document.write("<br>");
+var j=str.match(/is/g);
+document.write(j);
+document.write("<br>");
+var k=str.indexOf("is");
+document.write(k);
+document.write("<br>");
+var l=str.lastIndexOf("is");
+document.write(l);
+document.write("<br>");
+var m=str.replace(/is/g,"are");
+document.write(m);
+document.write("<br>");
+
+var str2= "      php is a good language    "
+var n=str2.trim();
+alert(n);
+document.write("<br>");
+
+
+
+
+
+      </script>
+
+    
+</body>
+</html>

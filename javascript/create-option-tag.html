@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+    
+        <select id="myselect">
+        
+            <option>pakistan</option>
+            <option>india</option>
+            <option>china</option>
+            <option>iran</option>
+
+        
+        </select>
+    
+    </form>
+    <br>
+    Enter options: <input type="text" id="t1">
+    <button type="button" onclick="myfunction()">Add country</button>
+    <p id="error"></p>
+  
+<script>
+    
+    function myfunction(){        
+        var country=document.getElementById("t1").value;
+        var error=document.getElementById("error");
+        
+        if(country!=""){
+        
+        var opt=document.createElement("option");
+        opt.text=country;
+        opt.value=country;
+        var select=document.getElementById("myselect");
+        select.appendChild(opt);
+        document.getElementById("t1").value="";
+            error.text="";
+        }
+        else{
+            error.text="please enter country";
+        }
+        
+        
+    }
+
+
+</script>
+
+</body>
+</html>

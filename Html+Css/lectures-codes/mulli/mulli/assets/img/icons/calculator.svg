@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 46H8C6.343 46 5 44.657 5 43V5C5 3.343 6.343 2 8 2H40C41.657 2 43 3.343 43 5V43C43 44.657 41.657 46 40 46Z" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M37 8H11V16H37V8Z" stroke="#DAD9FE" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M37 28V40H31V28H37Z" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M11 22H15" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M21 22H25" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M32 22H36" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M11 40H15" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M21 40H25" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M11 34H15" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M21 34H25" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M11 28H15" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M21 28H25" stroke="#353FFB" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+</svg>

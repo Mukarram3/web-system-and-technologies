@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mulli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="auth">
+
+<div class="row no-gutters">
+    <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center bg-light">
+        <div>
+            <a href="index.html"><img src="assets/img/logoBlack.svg"></a>
+        </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div id="forgot" class="p-5 text-center d_none">
+            <img src="assets/img/icons/CrossIcon.svg" onclick="show_login()" class="close">
+            <img src="assets/img/icons/SendPasswordEmailIcon.svg">
+            <h3>Enter your email address</h3>
+            <p class="mt-4 mb-5">You will receive an email with instructions to help you reset your password.</p>
+            <form method="POST">
+                <div class="mb-4 text-left">
+                    <label>EMAIL ADDRESS</label>
+                    <div class="input-group input-merge">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <img src="assets/img/icons/EmailIcon.svg" width="48" height="62">
+                                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Send email</button>
+                </div>
+            </form>
+        </div>
+        <div id="login" class="p-5 d_none1">
+            <h3 class="text-center mb-5">Login on Mulli</h3>
+            <form method="POST">
+                <div class="form-group">
+                    <label>EMAIL ADDRESS</label>
+                    <div class="input-group input-merge">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <img src="assets/img/icons/EmailIcon.svg" width="48" height="62">
+                                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>PASSWORD</label>
+                    <div class="input-group input-merge">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <img src="assets/img/icons/PasswordIcon.svg" width="48" height="62">
+                                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <div onclick="show_forgot()" class="btn float-right text-blue pr-0 mb-4">Forgot Password?</div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+                    <div onclick="show_signup()" class="btn">Don't have an account? <span class="text-blue">Signup</span></div>
+                </div>
+            </form>
+        </div>
+        <div id="signup" class="p-5 d_none">
+            <h3 class="text-center mb-5">Signup on Mulli</h3>
+            <form method="POST">
+                <div class="form-group">
+                    <label>COMPANY NAME</label>
+                    <div class="input-group input-merge">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <img src="assets/img/icons/ProfileIcon.svg" width="48" height="62">
+                                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your company name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>EMAIL ADDRESS</label>
+                    <div class="input-group input-merge">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <img src="assets/img/icons/EmailIcon.svg" width="48" height="62">
+                                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>PASSWORD</label>
+                    <div class="input-group input-merge">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <img src="assets/img/icons/PasswordIcon.svg" width="48" height="62">
+                                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="agree"> I agree to the <a href="legal.html">terms and conditions</a></label>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Signup</button>
+                    <div onclick="show_login()" class="btn">Already have an account? <span class="text-blue">Login</span></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function show_forgot() {
+        $('#forgot').show();
+        $('#login').hide();
+        $('#signup').hide();
+    }
+    function show_login() {
+        $('#forgot').hide();
+        $('#login').show();
+        $('#signup').hide();
+    }
+    function show_signup() {
+        $('#forgot').hide();
+        $('#login').hide();
+        $('#signup').show();
+    }
+</script>
+</body>
+</html>

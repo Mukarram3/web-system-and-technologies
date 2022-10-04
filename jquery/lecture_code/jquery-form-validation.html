@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- bootstrap css -->    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="psd.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container-fluid">
+
+<div class="container">
+
+<div class="row">
+
+
+
+</div>
+
+<form method="post">
+
+<div class="row">
+  <div class="form-group col-lg-4">
+    <label for="exampleInputEmail1">username</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp"></div>
+  </div>
+  <div class="form-group col-lg-4">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+    <div id="passerror"></div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="form-group col-lg-4">
+    <label for="exampleInputEmail1">confirm password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" aria-describedby="emailHelp">
+    <div id="passerro2"></div>
+  </div>
+  <div class="form-group col-lg-4">
+    <label for="exampleInputEmail1">email</label>
+    <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+    <div id="email_error"></div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="form-group col-lg-4">
+    <label for="exampleInputEmail1">Mobile Nmuber</label>
+    <input type="text" class="form-control" id="number" aria-describedby="emailHelp">
+    <div id="number_error"></div>
+  </div>
+  <div class="form-group form-check col-lg-4">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+  </div>
+  </div>
+  <div class="row">
+  <button type="submit" class="btn btn-primary" name="btn_submit" id="submit">Submit</button>
+  </div>
+</form>
+
+</div>
+
+</div>
+
+
+      
+      <script src="js/jquery.js"></script>
+     
+      <script>
+
+      
+$(document).ready(function(){
+
+
+//      selectors
+
+
+$(".div1").click(function(){
+
+$(this).css({"background":"yellow","color":"red"});
+
+});
+
+
+//      form validation
+
+
+ 
+$("#submit").click(function(){
+    $user= $("#exampleInputEmail1").val();
+if ($user=="" || !isNaN($user) || $user.length<=2 || $user.length>=25){
+    $("#emailHelp").html("please enter username in alphabets with range 3-26");
+    $("#emailHelp").css("color","red");
+    return false;
+  
+}
+$pass= $("#exampleInputPassword1").val();
+if ($pass.length<=2 || $pass.length>=25 || $pass==""){
+    $("#passerror").html("please enter password with range 3-26");
+    $("#passerror").css("color","red");
+    return false;
+  
+}
+
+$repass= $("#exampleInputPassword2").val();
+
+if ($pass!=$repass){
+    $("#passerror").html("password do not match");
+    $("#passerro2").html("password do not match");
+    $("#passerror").css("color","red");
+    $("#passerro2").css("color","red");
+    return false;
+  
+}
+
+$email= $("#email").val();
+if ($email.length<=5 || $email.length>=30 || $email=="" || $email.indexOf("@")<1 || $email.endsWith(".com")!=true){
+    $("#email_error").html("please enter email with range 5-30");
+    $("#email_error").css("color","red");
+    return false;
+  
+}
+
+$number= $("#number").val();
+if ($number=="" || $number.length!=11 || isNaN($number)){
+    $("#number_error").html("please enter mobile number with valid length");
+    $("#number_error").css("color","red");
+    return false;
+  
+}
+
+
+});
+
+});  
+
+
+      </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p{
+margin-left :10px;
+color : red;
+font-size : 8px;
+}
+</style>
+<script>
+function validateForm() {
+  var fname = document.forms["myForm"]["fname"].value;
+var genders = document.getElementsByName("gender");
+  if (fname == "") {
+    err = "Name must be filled out";
+	 document.getElementById("demo").innerHTML = err;
+	document.myForm.fname.focus();
+    	return false;
+  }
+else if (genders[0].checked == false && genders[1].checked == false){
+	err = "check gender";
+ 	document.getElementById("demo").innerHTML = err;
+	return false;
+}
+else if (document.forms["myForm"]["country"].selectedIndex < 1){
+	err = "select country";
+ 	document.getElementById("demo").innerHTML = err;
+	return false;
+}
+else if(document.forms["myForm"]["c1"].checked == false && document.forms["myForm"]["c2"].checked == false && document.forms["myForm"]["c3"].checked == false)
+	{
+	err = "select skill";
+ 	document.getElementById("demo").innerHTML = err;
+	return false;
+	}
+else
+{
+	err = "input ok";
+ 	document.getElementById("demo").innerHTML = err;
+	return true;
+}
+
+}
+</script>
+</head>
+<body>
+<h2>Form validation with JS </h2>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+   Name: <input type = "text" name = "fname"><br>
+	
+	Gender: <input type= "radio" name="gender" value = "male">Male <input type = "radio" name="gender" value = "female">Femele <br><br>
+	COUNTRY:<select name = "country">
+	<option value = "">Select Country</option>
+	<option value = "pakistan">pakistan</option>
+	<option value = "india">india</option>
+	<option value = "china">China</option>
+	</select> <br><br>
+	Skill: <br><input type = checkbox name = c1> MS-OFFICE<br>
+		<input type = checkbox name = c2> MS-Excel<br>
+		<input type = checkbox name = c3> MS-Excel<br><br>
+  <p id = "demo"></p><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

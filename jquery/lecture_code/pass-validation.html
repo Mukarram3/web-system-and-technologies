@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+
+<form action="">
+    <input type="password" placeholder="enter password" class="pass">
+    <p class="enter-pass"></p>
+    <input type="password" placeholder="confirm password" class="repass">
+    <p class="re-enter-pass"></p>
+    <p class="match"></p>
+    
+    <button class="submit">submit</button>
+</form>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        
+      
+    $(document).ready(function(){
+
+        $(".submit").click(function(){
+
+            $pass1=$(".pass").val();
+            $pass2=$(".repass").val();
+
+            if($pass1 == $pass2)
+            {
+
+                if($pass1 == "")
+                {
+                $(".enter-pass").text("please enter password");
+                    return false;
+                }
+                else if ($pass2 == "")
+                {
+                $(".re-enter-pass").text("please enter password");
+                    return false;
+                }
+                else if($pass1 == "" && $pass2 == "")
+                {
+                    $(".enter-pass").text("please enter password");
+                    $(".re-enter-pass").text("please enter password");
+                    return false;
+                }
+                else
+                {
+                    $(".match").text("matched");
+                    return true;
+                }
+            }
+            else
+            {
+                $(".match").text("password not matched");
+                return false;
+            }
+        
+            
+        });
+
+
+    });
+    </script>
+
+</body>
+</html>

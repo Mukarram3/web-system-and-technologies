@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fontawesome-free-5.11.1-web/css/all.min.css">
+    <style>
+
+.fa-facebook-f,  .fa-google{
+             font-size: 20px;
+    color: white;
+ 
+    padding: 5px 5px;
+      box-sizing: border-box;
+    border-radius: 5px;
+margin:3px;
+        }
+        .fa-facebook-f{
+
+    background: royalblue;
+
+
+        }
+    .fa-google{
+
+    background: #659abc;
+
+
+        }
+.fa-twitter{
+background:skyblue;
+   font-size: 20px;
+    padding: 5px 5px;
+      box-sizing: border-box;
+    border-radius: 5px;
+color:white;
+margin:3px;
+}
+.fa-linkedin{
+background:#6ea5c7;
+   font-size: 20px;
+    padding: 5px 5px;
+      box-sizing: border-box;
+    border-radius: 5px;
+color:white;
+margin:3px;
+}
+.icon-container{
+    padding: 30px;
+    border: 1px solid red;
+}
+
+        ul li{
+            float: left;
+
+        }
+        ul li:hover a span{
+            transform: rotatey(180deg);
+            transition: 1s;
+        }
+        .main-div{
+            padding: 40px;
+            border: 1px solid red;
+            font-size: 25px;
+            width: 15%;
+            position: relative;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 40px;
+            text-transform: capitalize;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: justify;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="icon-container">
+        <ul>
+              <li>
+                  
+                  <a href=""><span  class="fab fa-facebook-f"></span></a>
+              </li>
+              <li>
+                  <a href=""> <span  class="fab fa-twitter"></span></a>
+              </li>
+              <li>
+                 <a href="">  <span  class="fab fa-linkedin"></span></a>
+              </li>
+               <li>
+               <a href="">   <span  class="fab fa-google"></span></a>
+              </li>
+        </ul>    
+  
+  </div>
+  <br>
+  <div class="main-div">
+
+    <h1>mukarram</h1>
+    <p>jvjhv asdfdsfa dsagfdf efdf sdfsdf  sdfgdgg</p>
+
+  </div>
+  <button class="btn">animate</button>
+    
+
+  <script src="js/jquery.js"></script>
+  <script>
+
+      $(document).ready(function(){
+
+          $(".btn").click(function(){
+
+          $(".main-div").animate({"left":"100px"},3000);
+          $(".main-div").animate({"top":"200px","width":"30%"});
+          $(".main-div").animate({"left":"+=200px","width":"35%"});
+          $(".main-div").animate({"top":"+=200px","width":"30%"});
+          $(".main-div").animate({"left":"+=200px","width":"35%"});
+          
+
+        });
+      });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>basics of java srcipt</title>
+
+</head>
+
+
+<body>
+
+
+<form>
+Enter text: <input type = "text" id = "text1"> <br><br>
+search : <input type = "text" id = "text2"> <br><br>
+replace : <input type = "text" id = "text3"> <br><br>
+Result : <input type = "text" id = "text4"> <br><br>
+<input type = button value = result onclick = "result()"> <br><br>
+</form>
+
+
+
+
+<script>
+function result(){
+var x =  document.getElementById("text1").value;
+var y =  document.getElementById("text2").value;
+var z =  document.getElementById("text3").value;
+var t =x.replace(y, z);
+document.getElementById("text4").value = t;
+
+}
+
+/*
+
+<script src="js/jquery.js"></scrip
+
+    x =  $("#text1").val();
+    y =  $("#text2").val();
+    z =  $("#text3").val();
+    t =x.replace(y, z);
+   $("#text4").val(t);
+   
+
+   */
+
+
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>

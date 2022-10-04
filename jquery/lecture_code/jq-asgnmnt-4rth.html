@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fontawesome-free-5.11.1-web/css/all.min.css">
+    <style>
+
+        .main-div{
+            width: 100%;
+            
+        }
+        .img-div{
+            float: left;
+            width: 238px;
+            height: 167px;
+            margin-left: 15px;
+            margin-top: 50px;
+        }
+
+        .images{
+            width: 100%;
+            height: 100%;
+        }
+        .img6-div{
+            width: 51%;
+    height: 73%;
+    position: fixed;
+    top: 14%;
+    left: 22%;
+    display: none;
+    border: 5px solid red;
+    border-radius: 12px;
+    z-index: 2;
+        }
+        .img6-div img{
+            width: 100%;
+            height: 100%;
+        }
+        .fa-window-close{
+            width: 37px;
+    height: 34px;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    top: -32px;
+    color: white;
+    font-size: 37px;
+        }
+        .added-class{
+            border-bottom: 5px solid red;
+            
+        }
+        .adcls{
+            opacity: 0.4;
+        }
+        .img-div a img:hover{
+            transform: scale(0.8);
+            transition: 2s;
+            
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-div">
+        <div class="img-div">
+
+            <a href="#"><img src="images/business-people-1572059_1920.jpg" alt="loading" class="images"></a>
+
+         </div>
+         <div class="img-div">
+
+            <a href="#"><img src="images/img-2.png" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/img-3.png" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/men-1979261_1920.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/workplace-1245776_1920.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/923056407622_status_35669eb85bdb4431a4112d2dc58dde24.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/01.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/GBWA-20190709082358.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/IMG-20190131-WA0022.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/room.png" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/business-people-1572059_1920.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/img-2.png" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/img-3.png" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/men-1979261_1920.jpg" alt="loading" class="images"></a>
+
+        </div>
+        <div class="img-div">
+
+            <a href="#"><img src="images/workplace-1245776_1920.jpg" alt="loading" class="images"></a>
+
+        </div>
+    
+        <div class="img6-div">
+
+
+
+        <img src="images/img-2.png" alt="" class="img6">
+        <span class="fa fa-window-close"></span>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $(".img-div a .images").click(function(){
+
+                $(this).addClass("added-class");
+                $src=$(this).attr("src");
+                $(".img6").attr("src",$src);
+                $(".img6-div").fadeIn(1000);
+                
+                $(".img-div").addClass("adcls");
+
+            });
+
+            $(".fa-window-close").click(function(){
+
+                $(".img6-div").fadeOut(1000);
+               $(".images").removeClass("added-class");
+               $(".img-div").removeClass("adcls");
+
+            });
+
+        });
+
+        
+
+
+    </script>
+
+</body>
+</html>

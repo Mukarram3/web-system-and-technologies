@@ -1,0 +1,5 @@
+linear===The animation has the same speed from start to end	
+ease===Default value. The animation has a slow start, then         fast, before it ends slowly	
+ease-in	==The animation has a slow start	
+ease-out==The animation has a slow end	
+ease-in-out==The animation has both a slow start and a slow end

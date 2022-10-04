@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mulli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#legalSpy" data-offset="0">
+<nav class="navbar navbar-expand-md bg-light1 navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.png" height="34">
+        </a>
+        <div class="d-block d-md-none">
+            <i type="button" data-toggle="modal" data-target="#mobMenu_modal" class="fa fa-bars p-3"></i>
+        </div>
+        <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-none d-md-block" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+                    <div class="dropdown-menu full_dropdown">
+                        <div class="container">
+                            <div class="row justify-content-center w-100">
+                                <div class="col-md-5 col-lg-4">
+                                    <a href="payment-api.html" class="d-flex text-dark">
+                                        <div>
+                                            <figure><img src="assets/img/icons/mob_card.svg"></figure>
+                                        </div>
+                                        <div>
+                                            <h6>Payment API <i class="fa fa-chevron-right ml-2"></i></h6>
+                                            <small>Seamlessly initiate wire payments from within your
+                                                product.</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <a href="data-api.html" class="d-flex text-dark">
+                                        <div>
+                                            <figure><img src="assets/img/icons/money_time.svg"></figure>
+                                        </div>
+                                        <div>
+                                            <h6>Data API <i class="fa fa-chevron-right ml-2"></i></h6>
+                                            <small>Directly access your customers' financial data.</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legal.html">Legal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="security.html">Security</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link1 btn btn-outline-primary" href="auth.html">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End Header-->
+<section class="container space_t100 pb-5">
+    <div class="row align-items-center">
+        <div class="col-md-5 order-2 order-md-1">
+            <h1 data-aos="fade-up" data-aos-delay="100">Bank connections, made simple.</h1>
+            <p class="my-3" data-aos="fade-up" data-aos-delay="200">Mulli's world leading banking API is the bridge between your app and your users' bank accounts. Securely
+                initiate payments and access data in real time with one simple integration.</p>
+            <a href="contacts.html" class="btn btn-primary btn-lg mb-3" data-aos="fade-up" data-aos-delay="300">Contact Sales</a>
+            <p data-aos="fade-up" data-aos-delay="400"><a href="contacts.html" class="text-muted">Questions? Talk to an expert <i class="fa fa-arrow-right text-primary ml-2"></i></a></p>
+        </div>
+        <div class="col-md-7 order-1 order-md-2" data-aos="fade-in">
+            <video src="assets/video/intro.mp4" class="w-100" loop autoplay muted></video>
+        </div>
+        <div class="col-12 order-2 order-md-3" data-aos="fade-up" data-aos-delay="100">
+            <p class="text-muted">Partners and Clients</p>
+            <div class="row col-12 align-items-center">
+                <img src="assets/img/clients/combinator.svg" class="mt-3 mr-3">
+                <img src="assets/img/clients/adgm.svg" class="mt-3 mr-3">
+                <img src="assets/img/clients/difc.svg" class="mt-3 mr-3">
+                <img src="assets/img/clients/fde.svg" class="mt-3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="container py-5">
+    <div class="row py-5">
+        <div class="col-md-6">
+            <h2 data-aos="fade-up">Build great experiences, using one powerful API.</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Focus on building the best financial applications while our API securely connects your users' bank accounts, initiates payments, and pulls in financial data.</p>
+            <h4 data-aos="fade-up" data-aos-delay="200">Supported countries</h4>
+            <div class="row countries mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-6">
+                    <img src="assets/img/flags/congo.png">
+                    <span>Democratic Republic of Congo</span>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/flags/ksa.svg">
+                    <span>Kingdom of Saudi Arabia</span>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/flags/nigeria.png">
+                    <span>Nigeria</span>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/flags/uae.svg">
+                    <span>United Arab Emirates</span>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/flags/ku.svg">
+                    <span>Kuwait</span>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/flags/sa.svg">
+                    <span>South Africa</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center" data-aos="fade-in" data-aos-delay="500">
+            <img src="assets/img/cards/api.svg" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5 relative">
+    <div class="container py-5">
+        <img src="assets/img/icons/lock.svg" style="position: absolute; top: -110px;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 data-aos="fade-up" data-aos-delay="100">Security and Encryption</h2>
+            </div>
+            <div class="col-md-6">
+                <p data-aos="fade-up" data-aos-delay="200">We use bank-level security with 256-bit AES and 4096-bit RSA encryption. Keeping your data safe is
+                    our top priority and we ensure that the privacy of any credentials passing through our system is
+                    never compromised.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+                <h2 data-aos="fade-up">Payment API</h2>
+                <p class="my-4" data-aos="fade-up" data-aos-delay="100">Seamlessly initiate wire payments from within your product. Your customers will never have to leave
+                    your platform for a money transfer ever again.</p>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-12 col-sm-6 mb-4">
+                        <img src="assets/img/icons/wallet.svg"> Digital Wallets
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <img src="assets/img/icons/cell_card.svg"> Digital Banks
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <img src="assets/img/icons/plant.svg"> Investment Platforms
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="assets/img/icons/cart.svg"> E-commerce
+                    </div>
+                </div>
+                <p class="mt-4" data-aos="fade-up" data-aos-delay="300"><a href="payment-api.html" class="text-muted">Learn more <i class="fa fa-arrow-right text-primary"></i></a></p>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="assets/img/cards/payment_api.svg" class="img-fluid" data-aos="fade-in" data-aos-delay="500">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/cards/data_api.svg" class="img-fluid" data-aos="fade-in" data-aos-delay="500">
+            </div>
+            <div class="col-md-6">
+                <h2 data-aos="fade-up">Data API</h2>
+                <p class="my-4" data-aos="fade-up" data-aos-delay="100">Directly access your customers' financial data. Your customers will never need to upload PDF
+                    transaction reports or manually enter their information again.</p>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-12 col-sm-6 mb-4">
+                        <img src="assets/img/icons/calculator.svg"> Accounting
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <img src="assets/img/icons/finance.svg"> Financial Management
+                    </div>
+                    <div class="col-12 col-sm-6 mb-4">
+                        <img src="assets/img/icons/reward.svg"> Rewards
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="assets/img/icons/holding.svg"> Lending
+                    </div>
+                </div>
+                <p class="mt-4" data-aos="fade-up" data-aos-delay="300"><a href="data-api.html" class="text-muted">Learn more <i class="fa fa-arrow-right text-primary"></i></a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <!-- Nav pills -->
+        <div class="nav nav-pills mx-n3 mx-md-0" role="tablist">
+            <a class="nav-link ml-3 active" data-toggle="pill" href="#dq" data-aos="fade-up">Digital Wallets</a>
+            <a class="nav-link" data-toggle="pill" href="#pf" data-aos="fade-up" data-aos-delay="100">Personal Finances</a>
+            <a class="nav-link" data-toggle="pill" href="#pr" data-aos="fade-up" data-aos-delay="200">Payroll</a>
+            <a class="nav-link" data-toggle="pill" href="#ip" data-aos="fade-up" data-aos-delay="300">Investment Platforms</a>
+            <a class="nav-link" data-toggle="pill" href="#aa" data-aos="fade-up" data-aos-delay="400">Automated Accounting</a>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content container py-5">
+            <div id="dq" class="tab-pane active">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p data-aos="fade-up" data-aos-delay="100">Let your users top up their wallets directly from their banks and display real time balances across all of their accounts.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/cards/account.svg" class="img-fluid" data-aos="fade-in" data-aos-delay="500">
+                    </div>
+                </div>
+            </div>
+            <div id="pf" class="tab-pane fade">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Obtain a comprehensive picture of your users' finances by accessing and consolidating their transaction history.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/cards/balance.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div id="pr" class="tab-pane fade">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Reduce administrative time required for payroll processes and enable seamless payments to all of your employees.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/cards/payroll.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div id="ip" class="tab-pane fade">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Verify your customers' identity with detailed account and transaction information and enable automatic bank transfers for investment accounts.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/cards/investment.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div id="aa" class="tab-pane fade">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Simplify bookkeeping, expense management, and invoices with your users' detailed transactions and balance information.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/cards/accounting.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-7 text-md-center">
+                <h4 data-aos="fade-up">Built with love – for developers, by developers</h4>
+                <p class="mt-4 mb-5" data-aos="fade-up" data-aos-delay="100">We're a team of passionate engineers who obsess over sleek, robust, and flexible integration. We have made banking easy for you with simple integration and clear documentation guides to ensure that you can get up and running in no time.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="identity" class="container tab-pane active">
+                        <div class="json_view" data-aos="fade-in" data-aos-delay="500">
+                            <div class="windowHead">
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                            </div>
+                            <div class="windowBody">
+                                <h6>Get Identity</h6>
+                                <pre><code class="identity_account"></code></pre>
+                            </div>
+                            <div class="windowFooter">
+                                <div class="badge">json</div>
+                                <button class="btn btn-light">Run</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accounts" class="container tab-pane fade">
+                        <div class="json_view">
+                            <div class="windowHead">
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                            </div>
+                            <div class="windowBody">
+                                <h6>Get Accounts</h6>
+                                <pre><code class="identity_account"></code></pre>
+                            </div>
+                            <div class="windowFooter">
+                                <div class="badge">json</div>
+                                <button class="btn btn-light">Run</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="balance" class="container tab-pane fade">
+                        <div class="json_view">
+                            <div class="windowHead">
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                            </div>
+                            <div class="windowBody">
+                                <h6>Get Balance</h6>
+                                <pre><code class="balance"></code></pre>
+                            </div>
+                            <div class="windowFooter">
+                                <div class="badge">json</div>
+                                <button class="btn btn-light">Run</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="transactions" class="container tab-pane fade">
+                        <div class="json_view">
+                            <div class="windowHead">
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                                <i class="fa fa-circle text-light"></i>
+                            </div>
+                            <div class="windowBody">
+                                <h6>Get Transactions</h6>
+                                <pre><code class="transactions"></code></pre>
+                            </div>
+                            <div class="windowFooter">
+                                <div class="badge">json</div>
+                                <button class="btn btn-light">Run</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills tabs mx-n3 mx-md-0" role="tablist">
+                    <li class="nav-item ml-3 ml-md-0" data-aos="fade-up" data-aos-delay="100">
+                        <a class="nav-link active" data-toggle="pill" href="#identity"><img src="assets/img/icons/identity.svg"> <span>Get Identity</span></a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
+                        <a class="nav-link" data-toggle="pill" href="#accounts"><img src="assets/img/icons/user.svg"> <span>Get Accounts</span></a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
+                        <a class="nav-link" data-toggle="pill" href="#balance"><img src="assets/img/icons/dollar.svg"> <span>Get Balance</span></a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
+                        <a class="nav-link" data-toggle="pill" href="#transactions"><img src="assets/img/icons/transaction.svg"> <span>Get Transactions</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center my-5" data-aos="fade-up" data-aos-delay="100">
+            <a href="contacts.html" class="btn btn-primary btn-lg">Contact Sales</a>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer starts-->
+<footer class="bg-light py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 mb-md-0 d-flex flex-column justify-content-between">
+                <div>
+                    <a href="index.html"><img src="assets/img/logo.png" height="34"></a>
+                </div>
+                <div>
+                    <a href="auth.html" class="btn btn-primary mt-5 mb-3">Sign Up</a><br>
+                    <a href="auth.html" class="btn btn-outline-primary">Sign In</a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+                <h6>Company</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="payment-api.html">Payment API</a></li>
+                    <li><a href="data-api.html">Data API</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+                <h6>Support</h6>
+                <ul class="list-unstyled">
+                    <li><a href="legal.html">Legal</a></li>
+                    <li><a href="security.html">Security</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Mobile Menu -->
+<div class="modal fade-in" id="mobMenu_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0 container pl-3 pl-sm-0 pr-4">
+                <a href="index.html"><img src="assets/img/logo.png" height="34"></a>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="payment-api.html">Payment API</a>
+                <a class="dropdown-item" href="data-api.html">Data API</a>
+                <a class="dropdown-item" href="legal.html">Legal</a>
+                <a class="dropdown-item" href="security.html">Security</a>
+                <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                <a class="dropdown-item" href="auth.html">Log In</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

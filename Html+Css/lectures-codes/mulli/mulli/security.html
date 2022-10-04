@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mulli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#legalSpy" data-offset="0">
+<nav class="navbar navbar-expand-md bg-light1 navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.png" height="34">
+        </a>
+        <div class="d-block d-md-none">
+            <i type="button" data-toggle="modal" data-target="#mobMenu_modal" class="fa fa-bars p-3"></i>
+        </div>
+        <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-none d-md-block" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+                    <div class="dropdown-menu full_dropdown">
+                        <div class="container">
+                            <div class="row justify-content-center w-100">
+                                <div class="col-md-5 col-lg-4">
+                                    <a href="payment-api.html" class="d-flex text-dark">
+                                        <div>
+                                            <figure><img src="assets/img/icons/mob_card.svg"></figure>
+                                        </div>
+                                        <div>
+                                            <h6>Payment API <i class="fa fa-chevron-right ml-2"></i></h6>
+                                            <small>Seamlessly initiate wire payments from within your
+                                                product.</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <a href="data-api.html" class="d-flex text-dark">
+                                        <div>
+                                            <figure><img src="assets/img/icons/money_time.svg"></figure>
+                                        </div>
+                                        <div>
+                                            <h6>Data API <i class="fa fa-chevron-right ml-2"></i></h6>
+                                            <small>Directly access your customers' financial data.</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legal.html">Legal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="security.html">Security</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link1 btn btn-outline-primary" href="auth.html">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End Header-->
+
+
+
+
+<section class="bg-light space_t100 pb-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/img/icons/lock_big.svg" class="img-fluid" data-aos="fade-in" data-aos-delay="200">
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <h3>Security and Encryption</h3>
+                <p>Your security is our top priority. We protect your financial information using a three-point system with industry grade encryption. This provides the highest level of security, which protects credentials and sensitive data in the highly unlike scenario of a breach in our data vault.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5 border_bottom">
+    <div class="row py-5 justify-content-center">
+        <div class="col-12 col-md-9 text-md-center">
+            <h2 data-aos="fade-up">How to access your users’ information</h2>
+            <p data-aos="fade-up">All our endpoints communicate using HTTPS and we utilize user-specific 256-bit AES keys and application specific RSA encoded public keys. Since your data requires access keys that are stored both on your user’s device and your application, not even Mulli has access to any decrypted user information.</p>
+            <div class="row justify-content-between text-center pt-5 pb-0 pb-md-5">
+                <div class="col-md-4" data-aos="fade-up">
+                    <p>Your user sends a unique encrypted user key stored on their device</p>
+                    <img src="assets/img/icons/userr.svg">
+                    <h6>User</h6>
+                </div>
+                <div class="col-12 d-block d-md-none">
+                    <img src="assets/img/line.svg">
+                </div>
+                <div class="col-md-4 d-none d-md-flex" data-aos="fade-in" data-aos-delay="500">
+                    <img src="assets/img/line_tr.svg" style="position: absolute; z-index: -1; top: 115px; left: -90px;">
+                    <img src="assets/img/line_tr.svg" style="position: absolute; z-index: -1; top: 123px; right: -90px; transform:rotate(90deg);">
+                </div>
+                <div class="col-md-4 pt-3 pt-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <p>Your application sends the unique password needed to decrypt the user key</p>
+                    <img src="assets/img/icons/boxs.svg">
+                    <h6>Application</h6>
+                </div>
+                <div class="col-12 d-block d-md-none">
+                    <img src="assets/img/line.svg">
+                </div>
+            </div>
+            <div class="row justify-content-center text-center pt-0 pt-md-5">
+                <div class="col-md-4 pt-3 pt-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <p>Mulli decrypts user data with the user key and password</p>
+                    <img src="assets/img/icons/layers.svg">
+                    <h6>Mulli</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5 my-5 text-center">
+    <h2 data-aos="fade-up">Authentication Process</h2>
+    <video src="assets/video/process.mp4" autoplay muted class="w-100 mt-4"></video>
+</section>
+
+<section class="bg-light relative py-5 mt-5">
+    <img src="assets/img/mobile.png" class="bg_mob d-none d-md-block" data-aos="fade-in" data-aos-delay="400">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 ml-auto" data-aos="fade-up">
+                <h3>Start building</h3>
+                <p class="my-4">Get started by going through our documentation or schedule a demo with our team.</p>
+                <a href="contacts.html" class="btn btn-primary btn-lg">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Footer starts-->
+<footer class="bg-light py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 mb-md-0 d-flex flex-column justify-content-between">
+                <div>
+                    <a href="index.html"><img src="assets/img/logo.png" height="34"></a>
+                </div>
+                <div>
+                    <a href="auth.html" class="btn btn-primary mt-5 mb-3">Sign Up</a><br>
+                    <a href="auth.html" class="btn btn-outline-primary">Sign In</a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+                <h6>Company</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="payment-api.html">Payment API</a></li>
+                    <li><a href="data-api.html">Data API</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+                <h6>Support</h6>
+                <ul class="list-unstyled">
+                    <li><a href="legal.html">Legal</a></li>
+                    <li><a href="security.html">Security</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Mobile Menu -->
+<div class="modal fade-in" id="mobMenu_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0 container pl-3 pl-sm-0 pr-4">
+                <a href="index.html"><img src="assets/img/logo.png" height="34"></a>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="payment-api.html">Payment API</a>
+                <a class="dropdown-item" href="data-api.html">Data API</a>
+                <a class="dropdown-item" href="legal.html">Legal</a>
+                <a class="dropdown-item" href="security.html">Security</a>
+                <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                <a class="dropdown-item" href="auth.html">Log In</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

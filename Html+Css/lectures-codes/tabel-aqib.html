@@ -1,0 +1,144 @@
+<html>
+
+<head>
+</head>
+<body>
+<!--
+1 Disc
+2 Circle
+3 Square
+-->
+<ul type="square">
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+</ul>
+<!--
+1 "1"
+2 "A"
+3 "a"
+4 "i"
+5 "I" Ro
+-->
+<ol type="A" reversed>
+<li>LIST ITEM</li>
+<li>LIST ITEM 
+
+<ul type="circle">
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+</ul>
+
+</li>
+
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+<li>LIST ITEM</li>
+</ol>
+<!---------------------Table------------------>
+<!--COLSPAN 1 Row Cols
+ROWSPAN 2...3 rows - Cols -->
+
+<table border="1" width="90%" height="90%" align="center">
+<!-- 
+TR = Table Row
+TD = TABLE Data
+TH = TABLE HEADING
+ -->
+<tr> 
+<th colspan="2">TEXT</th>
+
+<th>TEXT</th>
+<th>TEXT</th>
+<th>TEXT</th>
+</tr>
+<tr> 
+
+<th>TEXT</th>
+<th colspan="3">TEXT</th> 
+
+
+<th>TEXT</th>
+</tr>
+
+<tr> 
+<th rowspan="2">TEXT</th>
+<th>TEXT</th>
+<th>TEXT</th>
+<th rowspan="4">TEXT</th>
+<th>TEXT</th>
+</tr>
+<tr> 
+
+<th>TEXT</th>
+<th>TEXT</th>
+
+<th>TEXT</th>
+</tr>
+<tr> 
+<th>TEXT</th>
+<th>TEXT</th>
+<th>TEXT</th>
+
+<th>TEXT</th>
+</tr>
+<tr> 
+<th>TEXT</th>
+<th>TEXT</th>
+<th>TEXT</th>
+
+<th>TEXT</th>
+</tr>
+
+</table>
+<br>
+<br>
+<br>
+<!---------------------FORMS------------------>
+<form>
+<input type="text" placeholder="ENTER NAME" autocomplete="off" autofocus required>
+<br>
+<input type="email" placeholder="email" required>
+<br>
+<input type="file" accept="" required>
+<!-- 
+number (Min - Max - maxlength)
+password
+month
+date
+color
+range
+-->
+<br>
+<input type="checkbox" value="hockey"> HOCKEY
+<br>
+<input type="checkbox" value="crick" id="c"> <label for="c"> CRICKET</label>
+<br>
+<!--Name attribute-->
+<input type="radio" checked name="" value="male" id="m"> <label for="m"> Male</label>
+<br>
+<input type="radio" name="" value="female" id="f"> <label for="f">Female</label>
+<br>
+<select>
+<option  selected disabled hidden>SELECT</option>
+<option>CITY 1</option>
+<option>CITY 2</option>
+<option >CITY 3</option>
+<option>CITY 4</option>
+<option>CITY 5</option>
+</select>
+<br>
+<textarea placeholder="" cols="40" rows="10"></textarea>
+<br>
+<br>
+<input type="submit" value="SEND">
+<input type="button" value="CLICK">
+<button type="submit">BUTTON <img src="images/room.png" width="20px" height="20px"></button>
+</form>
+</body>
+</html>

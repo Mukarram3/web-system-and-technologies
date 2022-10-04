@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PHP & Ajax</title>
+  <!-- jquery ui css -->
+ <link rel="stylesheet" href="css/jquery-ui.min.css">
+ <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+        <h1>Search in Date Range <br>using PHP & Ajax</h1>
+    </div>
+    <div id="date-wrap">
+        <form action="">
+      <label for="from">From</label>
+      <input type="text" id="from" autocomplete="off">
+      <label for="to">to</label>
+      <input type="text" id="to" autocomplete="off">
+      <input type="button" value="Add date" class="submit">
+    </form>
+    <p id="error"></p>
+    </div>
+      <p>Animations:<br>
+  <select id="anim">
+    <option value="show">Show (default)</option>
+    <option value="slideDown">Slide down</option>
+    <option value="fadeIn">Fade in</option>
+    <option value="blind">Blind (UI Effect)</option>
+    <option value="bounce">Bounce (UI Effect)</option>
+    <option value="clip">Clip (UI Effect)</option>
+    <option value="drop">Drop (UI Effect)</option>
+    <option value="fold">Fold (UI Effect)</option>
+    <option value="slide">Slide (UI Effect)</option>
+    <option value>None</option>
+  </select>
+</p>
+      <p>Format options:<br>
+  <select id="format">
+    <option value="mm/dd/yy">Default - mm/dd/yy</option>
+    <option value="yy-mm-dd">ISO 8601 - yy-mm-dd</option>
+    <option value="d M, y">Short - d M, y</option>
+    <option value="d MM, y">Medium - d MM, y</option>
+    <option value="DD, d MM, yy">Full - DD, d MM, yy</option>
+    <option value="&apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy">With text - &apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy</option>
+  </select>
+</p>
+      
+    <div id="content">
+
+        <table id="table-data" border="0" width="100%" cellpadding="10px">
+            <thead>
+              <th width="">Date</th>
+              <th width="30px">Action</th>
+              
+    
+            </thead>
+            <tbody>
+                               
+
+            </tbody>
+          </table>
+      
+    </div>
+  </div>
+  <!-- jquery -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+   
+  <script>
+
+      $(document).ready(function(){
+
+        //  jquery ui code
+
+          // animation
+        
+    $( "#anim" ).on( "change", function() {
+      $( "#from" ).datepicker( "option", "showAnim", $( this ).val() );
+       
+    });
+        
+        // date formate options
+        
+        $( "#format" ).on( "change", function() {
+      $( "#from" ).datepicker( "option", "dateFormat", $( this ).val() );
+            
+    });
+
+    from = $( "#from" )
+        .datepicker({
+            showOn: "button",
+      buttonImage: "images/calendar.gif",
+      buttonImageOnly: true,
+      buttonText: "Select date",
+          changeMonth: true,
+          numberOfMonths: 1,
+          changeYear: true,
+        })
+
+
+        //      end jquery ui code
+
+
+        $(".submit").click(function(e){
+
+            e.preventDefault();
+           $datefrom= $("#from").val();
+           $datefrom=new Date($datefrom);
+           $dateto= $("#to").val();
+           $dateto=new Date($dateto);
+           if($datefrom>$dateto){
+               $("#error").text("please enter date greater than today");
+               $("#error").fadeOut(5000);
+           }
+           else if($dateto>=$datefrom){
+             var milisec_in_onesec=1000;
+             var sec_in_hour=3600;
+             var hour_in_oneday=24;
+
+             $date=$dateto-$datefrom;
+             $date=$date/(milisec_in_onesec*sec_in_hour*hour_in_oneday);
+            $("#table-data tbody").append("<td>"+$date+"</td>"+"<br>");
+            
+           }
+           else{
+            $("#error").text("please enter date");
+               $("#error").fadeOut(5000);
+           }
+
+        });
+
+
+      });
+  
+  </script>
+
+</body>
+</html> 
+
+

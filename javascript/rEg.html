@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+
+Enter Text : <input type = "text"  id = "txt1" name = "txtb1">
+<input type="button" name="clickbtn" value="Display Result" onclick="checkreg()">
+<br>
+<p id = "demo"></p>
+<script>
+function checkreg(){
+  var str = document.getElementById("txt1").value;
+ var patt = new RegExp("[BSCS,BSIT]{4}[M,E]{1}[1-40]");
+  var res = patt.test(str);
+if(res == true)
+document.getElementById("demo").innerHTML = "ok";
+else
+document.getElementById("demo").innerHTML = "not ok";
+
+}
+
+</script>
+</body>
+</html>

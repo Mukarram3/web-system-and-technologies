@@ -1,0 +1,59 @@
+<html>
+<head>
+</head>
+<body>
+<div>
+        <div>
+<h1>Add two number using text box as input using javascript</h1>
+        </div>
+  Enter First Number :<input type="text" id="Text1" name="t1">
+            <br><br>
+Enter Second Number :<input type="text" id="Text2" name="t2">
+            <br><br>
+		<p id = "demo"> </p>
+
+            <br><br>
+         <input type="button" name="clickbtn" id="button" value="Display Result" onclick="add_number()">
+
+<script src="js/jquery.js"></script>
+<script>
+function add_number() {
+    
+ var first_number = Number(document.getElementById("Text1").value);
+var second_number = Number(document.getElementById("Text2").value);
+
+    if(isNaN(first_number) || isNaN(second_number)){
+        $("#demo").html("please enter only number");
+    }
+    else{
+        var result = first_number + second_number;
+document.getElementById("demo").innerHTML = result;
+    }
+    
+
+
+        }
+
+
+ /*
+
+ 
+<script src="js/jquery.js"></scrip
+
+ function add_number() {       
+          
+
+        $val1= Number($("#Text1").val());
+ $val2= Number($("#Text2").val());
+ $res=$val1+$val2;
+ $("#demo").html($res);
+ 
+ }
+
+*/
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>basics of java srcipt</title>
+
+</head>
+
+
+<body>
+<form>
+Enter text: <input type = "text" id = "text1"> <br><br>
+search : <input type = "text" id = "text2"> <br><br>
+Result : <input type = "text" id = "text3"> <br><br>
+<input type = button value = result onclick = "result()"> <br><br>
+</form>
+
+    
+    <!--
+
+ /*
+
+<script src="js/jquery.js"></script
+$var1=$("#text1").val();
+$var2=$("#text2").val();
+$var3=$var1.indexOf($var2);
+$("#text3").val($var3);
+
+*/
+
+
+-->
+
+
+<script>
+function result(){
+
+    
+
+var x =  document.getElementById("text1").value;
+var y =  document.getElementById("text2").value;
+var res = x.indexOf(y);
+document.getElementById("text3").value = res;
+
+
+}
+
+    
+    
+    
+</script>
+</body>
+
+</html>
+
+
+
+

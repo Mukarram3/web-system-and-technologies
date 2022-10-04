@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			/*code: 48-57 Numbers
+			  8  - Backspace,
+			  35 - home key, 36 - End key
+			  37-40: Arrow keys, 46 - Delete key*/
+			function restrictAlphabets(e){
+				var x=e.which||e.keycode;
+				if((x>=48 && x<=57) || x==8 ||
+					(x>=35 && x<=40)|| x==46)
+					return true;
+				else
+					return false;
+			}
+		</script>
+	</head>
+<body style="text-align: center;">
+	<h1>JavaScript - Allow only numbers in TextBox.</h1>
+	Enter numbers only:
+	<input type="text" onkeypress='return restrictAlphabets(event)'/>
+</body>
+
+</html>

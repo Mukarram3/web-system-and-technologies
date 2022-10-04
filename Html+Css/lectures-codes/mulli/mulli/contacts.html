@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mulli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#legalSpy" data-offset="0">
+<nav class="navbar navbar-expand-md bg-light1 navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.png" height="34">
+        </a>
+        <div class="d-block d-md-none">
+            <i type="button" data-toggle="modal" data-target="#mobMenu_modal" class="fa fa-bars p-3"></i>
+        </div>
+        <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-none d-md-block" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+                    <div class="dropdown-menu full_dropdown">
+                        <div class="container">
+                            <div class="row justify-content-center w-100">
+                                <div class="col-md-5 col-lg-4">
+                                    <a href="payment-api.html" class="d-flex text-dark">
+                                        <div>
+                                            <figure><img src="assets/img/icons/mob_card.svg"></figure>
+                                        </div>
+                                        <div>
+                                            <h6>Payment API <i class="fa fa-chevron-right ml-2"></i></h6>
+                                            <small>Seamlessly initiate wire payments from within your
+                                                product.</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="col-md-5 col-lg-4">
+                                    <a href="data-api.html" class="d-flex text-dark">
+                                        <div>
+                                            <figure><img src="assets/img/icons/money_time.svg"></figure>
+                                        </div>
+                                        <div>
+                                            <h6>Data API <i class="fa fa-chevron-right ml-2"></i></h6>
+                                            <small>Directly access your customers' financial data.</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legal.html">Legal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="security.html">Security</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link1 btn btn-outline-primary" href="auth.html">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End Header-->
+
+<section class="container space_t100 pb-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h4 data-aos="fade-in">Contact Sales</h4>
+            <p class="my-4" data-aos="fade-up">Please use the form on your right to contact our sales team.</p>
+            <p data-aos="fade-up">For other inquiries please follow the links below</p>
+            <div>
+                <ul class="contacts">
+                    <li data-aos="fade-up" data-aos-delay="100"><b>PR & Media</b> <a href="mailto:ria@mulli.co">ria@mulli.co</a></li>
+                    <li data-aos="fade-up" data-aos-delay="100"><b>Partnerships</b> <a href="mailto:sales@mulli.co">sales@mulli.co</a></li>
+                    <li data-aos="fade-up" data-aos-delay="200"><b>Technical Support</b> <a href="mailto:support@mulli.co">support@mulli.co</a></li>
+                    <li data-aos="fade-up" data-aos-delay="300"><b>Other Inquiries</b> <a href="mailto:hello@mulli.co">hello@mulli.co</a></li>
+                    <li data-aos="fade-up" data-aos-delay="400"><span><b>United States</b><br><small>WeWork, 44 Montgomery Street,<br>San Francisco, CA 94104</span></small></li>
+                    <li data-aos="fade-up" data-aos-delay="500"><span><b>United Arab Emirates</b><br><small>14-101, Al Khatem Tower, Abu Dhabi<br>Global Market Sq. United Arab Emirates</span></small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-5 ml-auto">
+            <div class="bg-light p-4" data-aos="fade-up" data-aos-delay="200">
+                <h4>Get in touch</h4>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" name="company" id="company" class="form-control" placeholder="Enter company name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Tell us about your company</label>
+                        <textarea name="msg" rows="6" id="msg" class="form-control" placeholder="Enter company description"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-outline-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer starts-->
+<footer class="bg-light py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 mb-md-0 d-flex flex-column justify-content-between">
+                <div>
+                    <a href="index.html"><img src="assets/img/logo.png" height="34"></a>
+                </div>
+                <div>
+                    <a href="auth.html" class="btn btn-primary mt-5 mb-3">Sign Up</a><br>
+                    <a href="auth.html" class="btn btn-outline-primary">Sign In</a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+                <h6>Company</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="payment-api.html">Payment API</a></li>
+                    <li><a href="data-api.html">Data API</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+                <h6>Support</h6>
+                <ul class="list-unstyled">
+                    <li><a href="legal.html">Legal</a></li>
+                    <li><a href="security.html">Security</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Mobile Menu -->
+<div class="modal fade-in" id="mobMenu_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0 container pl-3 pl-sm-0 pr-4">
+                <a href="index.html"><img src="assets/img/logo.png" height="34"></a>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="payment-api.html">Payment API</a>
+                <a class="dropdown-item" href="data-api.html">Data API</a>
+                <a class="dropdown-item" href="legal.html">Legal</a>
+                <a class="dropdown-item" href="security.html">Security</a>
+                <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                <a class="dropdown-item" href="auth.html">Log In</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

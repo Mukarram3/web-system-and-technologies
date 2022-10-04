@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <style>
+
+#slider,#age{
+width: 40%;
+margin: 0 auto;
+}
+
+    </style>
+  
+</head>
+<body>
+ 
+<div id="slider"></div>
+Age between
+<div id="age"></div>
+ 
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+    $(document).ready(function(){
+
+      $( "#slider" ).slider({
+
+        range: true,
+        max: 50,
+        min: 20,
+        values: [ 30,40 ],
+        slide: function( event, ui ) {
+        $( "#age" ).html(ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        
+      }
+
+      });
+      $( "#age" ).html( $( "#slider" ).slider( "values", 0 ) +
+      " - " + $( "#slider" ).slider( "values", 1 ) );
+
+    });
+      
+    </script>
+</body>
+</html>
